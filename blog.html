@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Fvdsn's blog</title>
+        <script src="js/lib/jquery.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=Raleway:200|Lato:100,300,400,700|Inconsolata' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' title='Hipster' href="css/blog.css"></link>
+    </head>
+    <body>
+	<div class='bg'>
+		<img src="img/fuji-blurred.jpg"></img>
+	</div>
+    	<div class='vignette'></div>
+    	<div class='bgnoise'></div>
+        <div class='main'>
+            <h1> Fvdsn's blog </h1>
+            <div class='content'>
+		<div class='toc'>
+		    <a class='toc_title'>Home</a>
+		    <a class='toc_title'>About</a>
+		    <a class='toc_title'>Artwork</a>
+		    <a class='toc_title'>Projects</a>
+		    <ul class='toc_section'>
+			<li><a>Vec.js</a></li>
+			<li><a>Himalaya</a></li>
+		    </ul>
+		</div>
+                <h1> A Brand New Title </h1>
+                <p> 
+                    Vec.js is a stand-alone 2D/3D vector math javascript library targeted at 
+                    html5 graphical applications. It is fast, concise, comprehensive
+                    and interoperates well with the WebGL and CSS stack. It provides 
+                    2D/3D vectors, 2D/3D transform matrices, and quaternions primitives with functional
+                    and imperative methods
+                    </p>
+                    <p>
+                    The project (code and website) is hosted on GitHub, and is available under the MIT Software License.
+                    Bugs,ideas and suggestions can be reported on the GitHub issues page.
+                    </p>
+                    
+                <h2> Introduction </h2>
+                <p>
+                There are three big challenges when designing a vector library for javascript.
+                The first is performance:
+                </p><p>
+               The functional API is designed to be easier to write and to read at the expense of
+               performance. The functional API is accessed trough the object's method, and all operators
+               return their result as a new instance:<p>
+                </p>
+<pre>
+// example usage of the functional API
+var center = v1.add(v2).div(2);
+var speed  = speed.add(accel.scale(deltaTime));
+</pre>
+                <p>
+                The imperative API never instanciates vectors; operations are always applied on the
+                first operand. The imperative API is accessed by the class methods. 
+                </p>
+             </div>
+        </div>
+    </body>
+</html>
