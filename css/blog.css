@@ -15,11 +15,7 @@ body{
 	color:white;
 	text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
 }
-pre{
-	font-family: Inconsolata !important;
-	color: white !important;
-	opacity: 0.75;
-}
+
 body > .bg{
 	z-index: -5000;
 	position: fixed;
@@ -50,7 +46,7 @@ body > .vignette{
 	margin-left: auto;
 	margin-right: auto;
 }
-.main h1{
+.main > h1{
 	font-weight: 200;
 	font-size: 32px;
 	text-shadow: 0px 1px 5px black;
@@ -64,16 +60,31 @@ body > .vignette{
 	border-radius: 2px;
 	text-align: justify;
 	box-shadow: 0px 5px 20px rgba(0,0,0,0.5);
-	color: rgba(255,255,255,0.4);
+	color: white;
 	text-shadow: none;
 	font-family: 'Lato';
 	font-weight: 400;
+	text-shadow: 0px 0px 5px rgba(255,255,255,0.2);
+	-webkit-transition: all 0.5s linear;
+}
+.content.flipped{
+	background: rgba(255,255,255,0.85);
+	color: #000D4E;
+	-webkit-transition: all 0.5s linear;
+
+}
+.content p{
+	text-shadow: none;
+	opacity: 0.5;
+}
+.content pre{
+	font-family: Inconsolata !important;
+	opacity: 0.75;
+	text-shadow: none;
 }
 .content h1, .content h2, .content h3, .content h4, .content h5{
-	color: white;
 	font-family:'Raleway';
 	font-weight: normal;
-	text-shadow: 0px 0px 5px rgba(255,255,255,0.2);
 }
 .content h1{
 	font-size: 23px;
@@ -99,7 +110,7 @@ body > .vignette{
 	-webkit-transition: all 500ms linear;
 	display: block;
 	margin-bottom: 7px;
-	font-size: 14px;
+	font-size: 16px;
 	cursor: pointer;
 }
 
@@ -112,7 +123,7 @@ body > .vignette{
 .toc li{
 	padding-left:7px;
 	text-indent: 0px;
-	font-size: 12px;
+	font-size: 13px;
 }
 .toc li:before{
 	content: "-";
